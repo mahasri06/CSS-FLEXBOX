@@ -1,0 +1,185 @@
+
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Header */
+.header {
+    background-color: wheat;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0;
+    color: white;
+    font-size: 2.5em;
+}
+
+.nav-bar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 0 0;
+}
+
+.nav-bar li {
+    margin: 0 15px;
+}
+
+.nav-bar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, pink, yellow);
+    padding: 50px 0;
+    text-align: center;
+    color: white;
+}
+
+
+.hero-content h2 {
+    font-size: 2.2em;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.hero-content button {
+    padding: 10px 20px;
+    background-color: #f8b400;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Main Content */
+.main-content {
+    padding: 50px 0;
+    background-color: #f7f7f7;
+}
+
+.recipes, .tips {
+    margin-bottom: 50px;
+}
+
+.recipes h2, .tips h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+/* Flexbox for Recipe Cards */
+.recipe-cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    flex: 1;
+    margin-right: 20px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card h3 {
+    padding: 20px 0;
+    font-size: 1.5em;
+    color: #333;
+    font-family: 'Roboto', sans-serif; /* Custom font */
+}
+
+.card p {
+    padding: 0 20px 20px 20px;
+    font-size: 1em;
+    color: #666;
+}
+
+/* Add hover effect to images */
+.card img:hover {
+    opacity: 0.9;
+    filter: grayscale(50%);
+}
+
+
+/* Flexbox for Tips Cards */
+.tips-cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tip-card {
+    flex: 1;
+    margin-right: 20px;
+    background-color: #f8b400;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.tip-card:last-child {
+    margin-right: 0;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer-nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 0 0;
+}
+
+.footer-nav li {
+    margin: 0 15px;
+}
+
+.footer-nav a {
+    color: white;
+    text-decoration: none;
+}
